@@ -1,22 +1,19 @@
-package by.epamtc.pashun.task0101.entity;
+package by.epamtc.pashun.task0108.entity;
 
 import java.util.Scanner;
 
-public class IntNumberInput {
+public class IntXInput {
 
-    int number;
+    double x;
 
-    public int numberInput() {
+    public double getX() {
 
         try {
             Scanner sc = new Scanner(System.in);
-            number = sc.nextInt();
+            x = sc.nextDouble();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
-        return number;
+        return x;
     }
 }
-
-
-

@@ -13,6 +13,6 @@ public class Runner {
 
         IntNumberInput input = new IntNumberInput();
 
-        LastDigitDeterminant.getLastDigitOfSquare(LastDigitDeterminant.getLastDigit(input.NumberInput()));
+        LastDigitDeterminant.getLastDigitOfSquare(LastDigitDeterminant.getLastDigit(input.numberInput()));
     }
 }
