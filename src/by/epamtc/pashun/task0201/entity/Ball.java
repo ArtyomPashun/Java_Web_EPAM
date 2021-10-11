@@ -3,7 +3,7 @@ package by.epamtc.pashun.task0201.entity;
 public class Ball {
 
     private final BallColour colour;
-    private double weight = 0;
+    private double weight;
 
     public Ball(double weight, BallColour colour) {
         this.weight = weight;
@@ -20,10 +20,9 @@ public class Ball {
 
     @Override
     public int hashCode() {
-        final int prime = 37;
-        int result = 1;
-        result = prime * result + ((colour == null) ? 0 : colour.hashCode());
-        return result;
+
+        return  33 * (int) weight + ((colour == null) ? 0 : colour.hashCode());
+
     }
 
     @Override

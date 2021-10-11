@@ -4,17 +4,17 @@ package by.epamtc.pashun.task0109.runner;
  *круга одного и того же заданного радиуса R.
  */
 
-import by.epamtc.pashun.task0109.entity.IntRadiusInput;
-import by.epamtc.pashun.task0109.logic.GetCircleArea;
-import by.epamtc.pashun.task0109.logic.GetCirclePerimeter;
+import by.epamtc.pashun.task0109.logic.ReceiveCircleArea;
+import by.epamtc.pashun.task0109.logic.ReceiveCirclePerimeter;
+import by.epamtc.pashun.task0109.scanner.IntRadiusInput;
 
 public class Runner {
 
     public static void main(String[] args) {
 
-        IntRadiusInput radiusInput = new IntRadiusInput();
+        int radius = IntRadiusInput.receiveRadius();
 
-        GetCirclePerimeter.getPerimeter(radiusInput.radiusInput());
-        GetCircleArea.getArea(radiusInput.getRadius());
+        System.out.println(ReceiveCirclePerimeter.receivePerimeter(radius));
+        System.out.println(ReceiveCircleArea.receiveArea(radius));
     }
 }

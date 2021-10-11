@@ -7,9 +7,9 @@ public class Basket {
 
     private ArrayList<Ball> basketArray;
 
-    private double totalWeight = 0;
+    private double totalWeight;
 
-    private int colourBalls = 0;
+    private int colourBalls;
 
     public Basket() {
 
@@ -23,7 +23,7 @@ public class Basket {
 
     }
 
-    public double getBallTotalWeight() {
+    public double receiveBallTotalWeight() {
 
         return totalWeight;
     }
@@ -40,10 +40,8 @@ public class Basket {
 
     @Override
     public int hashCode() {
-        final int prime = 37;
-        int result = 1;
-        result = prime * result + ((basketArray == null) ? 0 : basketArray.hashCode());
-        return result;
+
+        return (int) totalWeight * 31 + colourBalls + ((basketArray == null) ? 0 : basketArray.hashCode());
     }
 
     @Override

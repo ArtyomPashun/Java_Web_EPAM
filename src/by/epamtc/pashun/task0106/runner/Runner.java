@@ -4,10 +4,10 @@ package by.epamtc.pashun.task0106.runner;
  *полных минут и секунд прошло к этому моменту.
  */
 
-import by.epamtc.pashun.task0106.entity.IntSecInput;
 import by.epamtc.pashun.task0106.logic.HourDeterminant;
 import by.epamtc.pashun.task0106.logic.MinDeterminant;
 import by.epamtc.pashun.task0106.logic.SecDeterminant;
+import by.epamtc.pashun.task0106.scanner.IntSecInput;
 
 public class Runner {
 
@@ -15,8 +15,10 @@ public class Runner {
 
         IntSecInput secInput = new IntSecInput();
 
-        HourDeterminant.howManyHours(secInput.secInput());
-        MinDeterminant.howManyMin(secInput.getSec());
-        SecDeterminant.howManySec(secInput.getSec());
+        int sec = secInput.secInput();
+
+        System.out.println(HourDeterminant.howManyHours(sec));
+        System.out.println(MinDeterminant.howManyMin(sec));
+        System.out.println(SecDeterminant.howManySec(sec));
     }
 }

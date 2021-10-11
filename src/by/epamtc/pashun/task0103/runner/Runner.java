@@ -5,18 +5,18 @@ package by.epamtc.pashun.task0103.runner;
  *меньше площади заданного?
  */
 
-import by.epamtc.pashun.task0103.entity.DoubleSquareAreaInput;
-import by.epamtc.pashun.task0103.logic.ComparisonOfSquaresAreas;
-import by.epamtc.pashun.task0103.logic.SquareInCircleArea;
+import by.epamtc.pashun.task0103.logic.AreasComparison;
+import by.epamtc.pashun.task0103.logic.SquareInCircle;
+import by.epamtc.pashun.task0103.scanner.DoubleSquareAreaInput;
 
 public class Runner {
     public static void main(String[] args) {
 
-        DoubleSquareAreaInput squareAreaInput = new DoubleSquareAreaInput();
+        DoubleSquareAreaInput squareArea = new DoubleSquareAreaInput();
 
-        SquareInCircleArea.getSquareInCircleArea(squareAreaInput.SquareAreaInput());
+        System.out.println(SquareInCircle.receiveSquareInCircleArea(squareArea.squareAreaInput()));
 
-        ComparisonOfSquaresAreas.comparison(squareAreaInput.getSquareArea(),
-                SquareInCircleArea.getSquareInCircleArea(squareAreaInput.getSquareArea()));
+        System.out.println(AreasComparison.comparisonSquareAreas(squareArea.getSquareArea(),
+                SquareInCircle.receiveSquareInCircleArea(squareArea.getSquareArea())));
     }
 }

@@ -5,22 +5,17 @@ package by.epamtc.pashun.task0102.runner;
  * определялись все високосные года.
  */
 
-import by.epamtc.pashun.task0102.entity.IntMonthInput;
-import by.epamtc.pashun.task0102.entity.IntYearInput;
-import by.epamtc.pashun.task0102.logic.DeterminantDaysInMonth;
 import by.epamtc.pashun.task0102.logic.DeterminantLeapYear;
+import by.epamtc.pashun.task0102.scanner.IntDateInput;
+import by.epamtc.pashun.task0102.logic.DeterminantDaysInMonth;
 
 public class Runner {
     public static void main(String[] args) {
 
-        IntYearInput inputYear = new IntYearInput();
-        DeterminantLeapYear isLeapYear = new DeterminantLeapYear();
-        isLeapYear.isLeapYear(inputYear.YearInput());
-
-        IntMonthInput inputMonth = new IntMonthInput();
-        DeterminantDaysInMonth daysInMonth = new DeterminantDaysInMonth();
-        System.out.println(daysInMonth.setMonthAndGetDays(inputYear.getYear(), inputMonth.MonthInput()));
 
 
+       System.out.println(DeterminantDaysInMonth.
+                setMonthAndGetDays((DeterminantLeapYear.isLeapYear(IntDateInput.YearInput())),
+                        IntDateInput.MonthInput()));
     }
 }

@@ -5,20 +5,21 @@ package by.epamtc.pashun.task0104.runner;
  * чисел А, В, С, D есть хотя бы два четных.
  */
 
-import by.epamtc.pashun.task0104.entity.FourIntNumbersInput;
+
 import by.epamtc.pashun.task0104.logic.AtLeastTwoEvenNumbers;
+import by.epamtc.pashun.task0104.scanner.IntNumberInput;
 
 public class Runner {
+
     public static void main(String[] args) {
 
-        FourIntNumbersInput value = new FourIntNumbersInput();
+        IntNumberInput input = new IntNumberInput();
 
-        AtLeastTwoEvenNumbers isEven = new AtLeastTwoEvenNumbers();
+        int [] number = new int [4];
 
-        isEven.isTwoOrMoreEven(value.InputFourIntNumbers());
-
-        System.out.println(isEven.isChecking());
-
+        for (int i = 0; i < number.length; i++) {
+            number[i] = input.numberInput();
+        }
+        System.out.println(AtLeastTwoEvenNumbers.isTwoOrMoreEven(number));
     }
-
 }

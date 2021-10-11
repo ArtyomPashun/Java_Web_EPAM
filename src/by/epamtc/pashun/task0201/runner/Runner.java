@@ -1,5 +1,10 @@
 package by.epamtc.pashun.task0201.runner;
 
+/*Создать класс Мяч. Создать класс Корзина.
+ *Наполнить корзину мячиками.
+ *Определить вес мячиков в корзине и количество синих мячиков.
+ */
+
 import by.epamtc.pashun.task0201.entity.Ball;
 import by.epamtc.pashun.task0201.entity.BallColour;
 import by.epamtc.pashun.task0201.entity.Basket;
@@ -24,7 +29,7 @@ public class Runner {
         basket.addBall(blueBall5);
         basket.addBall(blueBall6);
 
-        basket.getBallTotalWeight();
-        basket.theNumberOfColourBalls(BallColour.BLUE);
+        System.out.println("total weight: " + basket.receiveBallTotalWeight());
+        System.out.println("blue balls: " + basket.theNumberOfColourBalls(BallColour.BLUE));
     }
 }

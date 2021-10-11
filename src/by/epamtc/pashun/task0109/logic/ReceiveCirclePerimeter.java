@@ -1,10 +1,10 @@
 package by.epamtc.pashun.task0109.logic;
 
-public class GetCirclePerimeter {
+public class ReceiveCirclePerimeter {
 
-    public static double getPerimeter(int radius) {
+    public static double receivePerimeter(int radius) {
 
-        double perimeter = 0;
+        double perimeter;
 
         perimeter = 2.0 * Math.PI * radius;
 

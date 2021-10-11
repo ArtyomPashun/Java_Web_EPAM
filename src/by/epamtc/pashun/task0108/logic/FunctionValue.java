@@ -1,6 +1,6 @@
 package by.epamtc.pashun.task0108.logic;
 
-public class GetFunctionValue {
+public class FunctionValue {
 
     public static double fx(double x) {
 

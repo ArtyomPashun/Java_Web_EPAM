@@ -1,10 +1,10 @@
 package by.epamtc.pashun.task0109.logic;
 
-public class GetCircleArea {
+public class ReceiveCircleArea {
 
-    public static double getArea(int radius) {
+    public static double receiveArea(int radius) {
 
-        double area = 0;
+        double area;
 
         area = Math.pow(radius, 2) * Math.PI;
 

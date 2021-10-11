@@ -3,8 +3,8 @@ package by.epamtc.pashun.task0108.runner;
 /*Вычислить значение заданной функции
  */
 
-import by.epamtc.pashun.task0108.entity.IntXInput;
-import by.epamtc.pashun.task0108.logic.GetFunctionValue;
+import by.epamtc.pashun.task0108.scanner.IntXInput;
+import by.epamtc.pashun.task0108.logic.FunctionValue;
 
 public class Runner {
 
@@ -12,6 +12,6 @@ public class Runner {
 
         IntXInput xInput = new IntXInput();
 
-        System.out.println(GetFunctionValue.fx(xInput.getX()));
+        System.out.println(FunctionValue.fx(xInput.inputX()));
     }
 }

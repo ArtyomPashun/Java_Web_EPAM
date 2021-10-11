@@ -3,7 +3,7 @@ package by.epamtc.pashun.task0110.logic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetTgX {
+public class TgXFunction {
 
     List<Double> arrayTgX = new ArrayList<>();
     List<Double> arrayA = new ArrayList<>();
@@ -19,9 +19,8 @@ public class GetTgX {
         return arrayTgX;
     }
 
-    public void printF() {
+    public void printResult() {
         for (int i = 0; i < arrayTgX.size(); i++) {
-
             System.out.println(arrayA.get(i) + "   " + arrayTgX.get(i));
         }
     }

@@ -4,11 +4,16 @@ import java.util.Scanner;
 
 public class DeterminantLeapYear {
 
-    boolean isLeapYear = true;
+    public static boolean isLeapYear(int year) {
 
-    public boolean isLeapYear(int year) {
+        boolean isLeapYear;
+
         if (year % 4 == 0) {
-            isLeapYear = true;
+            if (year % 100 == 0 && year % 400 != 0) {
+                return isLeapYear = false;
+            } else {
+                isLeapYear = true;
+            }
         } else {
             isLeapYear = false;
         }

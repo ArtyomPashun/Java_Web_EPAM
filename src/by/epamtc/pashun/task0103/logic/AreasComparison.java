@@ -1,8 +1,8 @@
 package by.epamtc.pashun.task0103.logic;
 
-public class ComparisonOfSquaresAreas {
+public class AreasComparison {
 
-    public static double comparison(double initialArea, double finalArea) {
+    public static double comparisonSquareAreas(double initialArea, double finalArea) {
 
         double howManyAreasDiffer;
 
