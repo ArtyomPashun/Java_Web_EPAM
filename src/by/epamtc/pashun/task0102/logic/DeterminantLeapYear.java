@@ -1,7 +1,5 @@
 package by.epamtc.pashun.task0102.logic;
 
-import java.util.Scanner;
-
 public class DeterminantLeapYear {
 
     public static boolean isLeapYear(int year) {
@@ -20,3 +18,4 @@ public class DeterminantLeapYear {
         return isLeapYear;
     }
 }
+

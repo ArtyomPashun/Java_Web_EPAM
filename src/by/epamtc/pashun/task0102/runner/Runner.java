@@ -15,7 +15,7 @@ public class Runner {
 
 
        System.out.println(DeterminantDaysInMonth.
-                setMonthAndGetDays((DeterminantLeapYear.isLeapYear(IntDateInput.YearInput())),
+                enterMonthReceiveDays((DeterminantLeapYear.isLeapYear(IntDateInput.YearInput())),
                         IntDateInput.MonthInput()));
     }
 }

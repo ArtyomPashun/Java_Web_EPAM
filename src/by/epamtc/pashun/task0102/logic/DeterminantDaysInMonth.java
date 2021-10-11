@@ -2,7 +2,7 @@ package by.epamtc.pashun.task0102.logic;
 
 public class DeterminantDaysInMonth {
 
-    public static int setMonthAndGetDays(boolean leapYear, int month) {
+    public static int enterMonthReceiveDays(boolean leapYear, int month) {
 
         int daysInMonth;
 
